@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://provider.homework2.rpc.csc3374.sse.aui.ma/" xmlns:tns="http://provider.homework2.rpc.csc3374.sse.aui.ma/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Exception" type="tns:Exception"/>
+
+  <xs:element name="getOsName" type="tns:getOsName"/>
+
+  <xs:element name="getOsNameResponse" type="tns:getOsNameResponse"/>
+
+  <xs:element name="getScreenShot" type="tns:getScreenShot"/>
+
+  <xs:element name="getScreenShotResponse" type="tns:getScreenShotResponse"/>
+
+  <xs:element name="reboot" type="tns:reboot"/>
+
+  <xs:element name="rebootResponse" type="tns:rebootResponse"/>
+
+  <xs:complexType name="getOsName">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getOsNameResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getScreenShot">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getScreenShotResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="reboot">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="rebootResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Exception">
+    <xs:sequence>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
